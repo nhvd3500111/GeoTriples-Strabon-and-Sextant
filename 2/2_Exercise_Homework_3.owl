@@ -1,0 +1,1339 @@
+Prefix(:=<http://www.opengis.net/ont/geosparql#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(geo:=<http://www.opengis.net/ont/geosparql#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+
+Ontology(<http://www.opengis.net/ont/geosparql>
+Import(<http://www.opengis.net/ont/gml>)
+Import(<http://www.opengis.net/ont/sf>)
+Import(<http://www.w3.org/2004/02/skos/core>)
+Annotation(dc:creator "Open Geospatial Consortium"^^xsd:string)
+Annotation(dc:date "2012-04-30"^^xsd:date)
+Annotation(dc:description "An RDF/OWL vocabulary for representing spatial information"^^xsd:string)
+Annotation(dc:source <http://www.opengis.net/doc/IS/geosparql/1.0>)
+Annotation(dc:source "OGC GeoSPARQL – A Geographic Query Language for RDF Data OGC 11-052r5"^^xsd:string)
+Annotation(rdfs:seeAlso <http://www.opengis.net/def/function/ogc-geosparql/1.0>)
+Annotation(rdfs:seeAlso <http://www.opengis.net/def/rule/ogc-geosparql/1.0>)
+Annotation(rdfs:seeAlso <http://www.opengis.net/doc/IS/geosparql/1.0>)
+
+Declaration(Class(geo:Beach))
+Declaration(Class(geo:BodiesOfWater))
+Declaration(Class(geo:Canal))
+Declaration(Class(geo:CaveEntrance))
+Declaration(Class(geo:Cemetery))
+Declaration(Class(geo:City))
+Declaration(Class(geo:Cliff))
+Declaration(Class(geo:Country))
+Declaration(Class(geo:Dock))
+Declaration(Class(geo:Drain))
+Declaration(Class(geo:Dwelling))
+Declaration(Class(geo:Farm))
+Declaration(Class(geo:Farmland))
+Declaration(Class(geo:Farmyard))
+Declaration(Class(geo:Feature))
+Declaration(Class(geo:Forest))
+Declaration(Class(geo:Geometry))
+Declaration(Class(geo:Glacier))
+Declaration(Class(geo:Grass))
+Declaration(Class(geo:Hamlet))
+Declaration(Class(geo:Heath))
+Declaration(Class(geo:Industrial))
+Declaration(Class(geo:Island))
+Declaration(Class(geo:LandUseAndCover))
+Declaration(Class(geo:Locality))
+Declaration(Class(geo:Military))
+Declaration(Class(geo:Mine))
+Declaration(Class(geo:NationalCapital))
+Declaration(Class(geo:NationalPark))
+Declaration(Class(geo:NaturalFeatures))
+Declaration(Class(geo:NatureReserve))
+Declaration(Class(geo:Orchard))
+Declaration(Class(geo:Park))
+Declaration(Class(geo:Peak))
+Declaration(Class(geo:Places))
+Declaration(Class(geo:Quarry))
+Declaration(Class(geo:RecreationGround))
+Declaration(Class(geo:Region))
+Declaration(Class(geo:Reservoir))
+Declaration(Class(geo:Residential))
+Declaration(Class(geo:Retail))
+Declaration(Class(geo:River))
+Declaration(Class(geo:Scrub))
+Declaration(Class(geo:SpatialObject))
+Declaration(Class(geo:Spring))
+Declaration(Class(geo:Stream))
+Declaration(Class(geo:Suburb))
+Declaration(Class(geo:Town))
+Declaration(Class(geo:Tree))
+Declaration(Class(geo:Village))
+Declaration(Class(geo:Vineyard))
+Declaration(Class(geo:Volcano))
+Declaration(Class(geo:Water))
+Declaration(Class(geo:Waterways))
+Declaration(Class(geo:Wetland))
+Declaration(ObjectProperty(geo:defaultGeometry))
+Declaration(ObjectProperty(geo:ehContains))
+Declaration(ObjectProperty(geo:ehCoveredBy))
+Declaration(ObjectProperty(geo:ehCovers))
+Declaration(ObjectProperty(geo:ehDisjoint))
+Declaration(ObjectProperty(geo:ehEquals))
+Declaration(ObjectProperty(geo:ehInside))
+Declaration(ObjectProperty(geo:ehMeet))
+Declaration(ObjectProperty(geo:ehOverlap))
+Declaration(ObjectProperty(geo:hasGeometry))
+Declaration(ObjectProperty(geo:rcc8dc))
+Declaration(ObjectProperty(geo:rcc8ec))
+Declaration(ObjectProperty(geo:rcc8eq))
+Declaration(ObjectProperty(geo:rcc8ntpp))
+Declaration(ObjectProperty(geo:rcc8ntppi))
+Declaration(ObjectProperty(geo:rcc8po))
+Declaration(ObjectProperty(geo:rcc8tpp))
+Declaration(ObjectProperty(geo:rcc8tppi))
+Declaration(ObjectProperty(geo:sfContains))
+Declaration(ObjectProperty(geo:sfCrosses))
+Declaration(ObjectProperty(geo:sfDisjoint))
+Declaration(ObjectProperty(geo:sfEquals))
+Declaration(ObjectProperty(geo:sfIntersects))
+Declaration(ObjectProperty(geo:sfOverlaps))
+Declaration(ObjectProperty(geo:sfTouches))
+Declaration(ObjectProperty(geo:sfWithin))
+Declaration(DataProperty(geo:asGML))
+Declaration(DataProperty(geo:asWKT))
+Declaration(DataProperty(geo:coordinateDimension))
+Declaration(DataProperty(geo:dimension))
+Declaration(DataProperty(geo:haOsmId))
+Declaration(DataProperty(geo:hasCode))
+Declaration(DataProperty(geo:hasFClass))
+Declaration(DataProperty(geo:hasId))
+Declaration(DataProperty(geo:hasName))
+Declaration(DataProperty(geo:hasPopulation))
+Declaration(DataProperty(geo:hasSerialization))
+Declaration(DataProperty(geo:hasWidth))
+Declaration(DataProperty(geo:isEmpty))
+Declaration(DataProperty(geo:isSimple))
+Declaration(DataProperty(geo:spatialDimension))
+Declaration(AnnotationProperty(dc:contributor))
+Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:date))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:source))
+Declaration(Datatype(geo:gmlLiteral))
+Declaration(Datatype(geo:wktLiteral))
+Declaration(Datatype(xsd:date))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: geo:defaultGeometry (defaultGeometry)
+
+AnnotationAssertion(dc:contributor geo:defaultGeometry "Matthew Perry")
+AnnotationAssertion(dc:creator geo:defaultGeometry "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:defaultGeometry "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:defaultGeometry "
+      The default geometry to be used in spatial calculations.
+      It is Usually the most detailed geometry.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:defaultGeometry "
+      The default geometry to be used in spatial calculations.
+      It is Usually the most detailed geometry.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:defaultGeometry <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:defaultGeometry <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:defaultGeometry "defaultGeometry"@en)
+AnnotationAssertion(skos:definition geo:defaultGeometry "
+      The default geometry to be used in spatial calculations.
+      It is Usually the most detailed geometry.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:defaultGeometry "defaultGeometry"@en)
+SubObjectPropertyOf(geo:defaultGeometry geo:hasGeometry)
+ObjectPropertyDomain(geo:defaultGeometry geo:Feature)
+ObjectPropertyRange(geo:defaultGeometry geo:Geometry)
+
+# Object Property: geo:ehContains (contains)
+
+AnnotationAssertion(dc:contributor geo:ehContains "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehContains "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehContains "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehContains "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*TFF*FF*
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehContains "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*TFF*FF*
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehContains <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehContains <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehContains "contains"@en)
+AnnotationAssertion(skos:definition geo:ehContains "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*TFF*FF*
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehContains "contains"@en)
+ObjectPropertyDomain(geo:ehContains geo:SpatialObject)
+ObjectPropertyRange(geo:ehContains geo:SpatialObject)
+
+# Object Property: geo:ehCoveredBy (coveredBy)
+
+AnnotationAssertion(dc:contributor geo:ehCoveredBy "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehCoveredBy "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehCoveredBy "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehCoveredBy "
+      Exists if the subject SpatialObject is spatially covered 
+      by the object SpatialObject. DE-9IM: TFF*TFT**
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehCoveredBy "
+      Exists if the subject SpatialObject is spatially covered 
+      by the object SpatialObject. DE-9IM: TFF*TFT**
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehCoveredBy <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehCoveredBy <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehCoveredBy "coveredBy"@en)
+AnnotationAssertion(skos:definition geo:ehCoveredBy "
+      Exists if the subject SpatialObject is spatially covered 
+      by the object SpatialObject. DE-9IM: TFF*TFT**
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehCoveredBy "coveredBy"@en)
+ObjectPropertyDomain(geo:ehCoveredBy geo:SpatialObject)
+ObjectPropertyRange(geo:ehCoveredBy geo:SpatialObject)
+
+# Object Property: geo:ehCovers (covers)
+
+AnnotationAssertion(dc:contributor geo:ehCovers "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehCovers "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehCovers "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehCovers "
+      Exists if the subject SpatialObject spatially covers the 
+      object SpatialObject. DE-9IM: T*TFT*FF*
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehCovers "
+      Exists if the subject SpatialObject spatially covers the 
+      object SpatialObject. DE-9IM: T*TFT*FF*
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehCovers <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehCovers <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehCovers "covers"@en)
+AnnotationAssertion(skos:definition geo:ehCovers "
+      Exists if the subject SpatialObject spatially covers the 
+      object SpatialObject. DE-9IM: T*TFT*FF*
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehCovers "covers"@en)
+ObjectPropertyDomain(geo:ehCovers geo:SpatialObject)
+ObjectPropertyRange(geo:ehCovers geo:SpatialObject)
+
+# Object Property: geo:ehDisjoint (disjoint)
+
+AnnotationAssertion(dc:contributor geo:ehDisjoint "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehDisjoint "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehDisjoint "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehDisjoint "
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehDisjoint "
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehDisjoint <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehDisjoint <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehDisjoint "disjoint"@en)
+AnnotationAssertion(skos:definition geo:ehDisjoint "
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FF*FF****
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehDisjoint "disjoint"@en)
+ObjectPropertyDomain(geo:ehDisjoint geo:SpatialObject)
+ObjectPropertyRange(geo:ehDisjoint geo:SpatialObject)
+
+# Object Property: geo:ehEquals (equals)
+
+AnnotationAssertion(dc:contributor geo:ehEquals "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehEquals "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehEquals "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehEquals "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehEquals "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehEquals <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehEquals <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehEquals "equals"@en)
+AnnotationAssertion(skos:definition geo:ehEquals "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehEquals "equals"@en)
+ObjectPropertyDomain(geo:ehEquals geo:SpatialObject)
+ObjectPropertyRange(geo:ehEquals geo:SpatialObject)
+
+# Object Property: geo:ehInside (inside)
+
+AnnotationAssertion(dc:contributor geo:ehInside "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehInside "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehInside "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehInside "
+      Exists if the subject SpatialObject is spatially inside 
+      the object SpatialObject. DE-9IM: TFF*FFT**
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehInside "
+      Exists if the subject SpatialObject is spatially inside 
+      the object SpatialObject. DE-9IM: TFF*FFT**
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehInside <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehInside <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehInside "inside"@en)
+AnnotationAssertion(skos:definition geo:ehInside "
+      Exists if the subject SpatialObject is spatially inside 
+      the object SpatialObject. DE-9IM: TFF*FFT**
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehInside "inside"@en)
+ObjectPropertyDomain(geo:ehInside geo:SpatialObject)
+ObjectPropertyRange(geo:ehInside geo:SpatialObject)
+
+# Object Property: geo:ehMeet (meet)
+
+AnnotationAssertion(dc:contributor geo:ehMeet "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehMeet "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehMeet "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehMeet "
+      Exists if the subject SpatialObject spatially meets the 
+      object SpatialObject. 
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehMeet "
+      Exists if the subject SpatialObject spatially meets the 
+      object SpatialObject. 
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehMeet <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehMeet <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehMeet "meet"@en)
+AnnotationAssertion(skos:definition geo:ehMeet "
+      Exists if the subject SpatialObject spatially meets the 
+      object SpatialObject. 
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehMeet "meet"@en)
+ObjectPropertyDomain(geo:ehMeet geo:SpatialObject)
+ObjectPropertyRange(geo:ehMeet geo:SpatialObject)
+
+# Object Property: geo:ehOverlap (overlap)
+
+AnnotationAssertion(dc:contributor geo:ehOverlap "Matthew Perry")
+AnnotationAssertion(dc:creator geo:ehOverlap "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:ehOverlap "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:ehOverlap "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: T*T***T**
+    "@en)
+AnnotationAssertion(rdfs:comment geo:ehOverlap "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: T*T***T**
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehOverlap <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:ehOverlap <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:ehOverlap "overlap"@en)
+AnnotationAssertion(skos:definition geo:ehOverlap "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: T*T***T**
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:ehOverlap "overlap"@en)
+ObjectPropertyDomain(geo:ehOverlap geo:SpatialObject)
+ObjectPropertyRange(geo:ehOverlap geo:SpatialObject)
+
+# Object Property: geo:hasGeometry (hasGeometry)
+
+AnnotationAssertion(dc:contributor geo:hasGeometry "Matthew Perry")
+AnnotationAssertion(dc:creator geo:hasGeometry "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:hasGeometry "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:hasGeometry "
+      A spatial representation for a given feature.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:hasGeometry "
+      A spatial representation for a given feature.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:hasGeometry <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:hasGeometry <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:hasGeometry "hasGeometry"@en)
+AnnotationAssertion(skos:definition geo:hasGeometry "
+      A spatial representation for a given feature.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:hasGeometry "hasGeometry"@en)
+ObjectPropertyDomain(geo:hasGeometry geo:Feature)
+ObjectPropertyRange(geo:hasGeometry geo:Geometry)
+
+# Object Property: geo:rcc8dc (disconnected)
+
+AnnotationAssertion(dc:contributor geo:rcc8dc "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8dc "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8dc "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8dc "
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FFTFFTTTT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8dc "
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FFTFFTTTT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8dc <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8dc <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8dc "disconnected"@en)
+AnnotationAssertion(skos:definition geo:rcc8dc "
+      Exists if the subject SpatialObject is spatially disjoint
+      from the object SpatialObject. DE-9IM: FFTFFTTTT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8dc "disconnected"@en)
+ObjectPropertyDomain(geo:rcc8dc geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8dc geo:SpatialObject)
+
+# Object Property: geo:rcc8ec (externally connected)
+
+AnnotationAssertion(dc:contributor geo:rcc8ec "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8ec "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8ec "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8ec "
+      Exists if the subject SpatialObject spatially meets the 
+      object SpatialObject. DE-9IM: FFTFTTTTT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8ec "
+      Exists if the subject SpatialObject spatially meets the 
+      object SpatialObject. DE-9IM: FFTFTTTTT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8ec <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8ec <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8ec "externally connected"@en)
+AnnotationAssertion(skos:definition geo:rcc8ec "
+      Exists if the subject SpatialObject spatially meets the 
+      object SpatialObject. DE-9IM: FFTFTTTTT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8ec "externally connected"@en)
+ObjectPropertyDomain(geo:rcc8ec geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8ec geo:SpatialObject)
+
+# Object Property: geo:rcc8eq (equals)
+
+AnnotationAssertion(dc:contributor geo:rcc8eq "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8eq "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8eq "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8eq "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8eq "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8eq <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8eq <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8eq "equals"@en)
+AnnotationAssertion(skos:definition geo:rcc8eq "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8eq "equals"@en)
+ObjectPropertyDomain(geo:rcc8eq geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8eq geo:SpatialObject)
+
+# Object Property: geo:rcc8ntpp (non-tangential proper part)
+
+AnnotationAssertion(dc:contributor geo:rcc8ntpp "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8ntpp "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8ntpp "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8ntpp "
+      Exists if the subject SpatialObject is spatially inside 
+      the object SpatialObject. DE-9IM: TFFTFFTTT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8ntpp "
+      Exists if the subject SpatialObject is spatially inside 
+      the object SpatialObject. DE-9IM: TFFTFFTTT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8ntpp <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8ntpp <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8ntpp "non-tangential proper part"@en)
+AnnotationAssertion(skos:definition geo:rcc8ntpp "
+      Exists if the subject SpatialObject is spatially inside 
+      the object SpatialObject. DE-9IM: TFFTFFTTT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8ntpp "non-tangential proper part"@en)
+ObjectPropertyDomain(geo:rcc8ntpp geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8ntpp geo:SpatialObject)
+
+# Object Property: geo:rcc8ntppi (non-tangential proper part inverse)
+
+AnnotationAssertion(dc:contributor geo:rcc8ntppi "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8ntppi "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8ntppi "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8ntppi "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: TTTFFTFFT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8ntppi "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: TTTFFTFFT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8ntppi <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8ntppi <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8ntppi "non-tangential proper part inverse"@en)
+AnnotationAssertion(skos:definition geo:rcc8ntppi "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: TTTFFTFFT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8ntppi "non-tangential proper part inverse"@en)
+ObjectPropertyDomain(geo:rcc8ntppi geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8ntppi geo:SpatialObject)
+
+# Object Property: geo:rcc8po (partially overlapping)
+
+AnnotationAssertion(dc:contributor geo:rcc8po "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8po "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8po "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8po "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: TTTTTTTTT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8po "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: TTTTTTTTT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8po <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8po <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8po "partially overlapping"@en)
+AnnotationAssertion(skos:definition geo:rcc8po "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: TTTTTTTTT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8po "partially overlapping"@en)
+ObjectPropertyDomain(geo:rcc8po geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8po geo:SpatialObject)
+
+# Object Property: geo:rcc8tpp (tangential proper part)
+
+AnnotationAssertion(dc:contributor geo:rcc8tpp "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8tpp "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8tpp "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8tpp "
+      Exists if the subject SpatialObject is spatially covered 
+      by the object SpatialObject. DE-9IM: TFFTTFTTT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8tpp "
+      Exists if the subject SpatialObject is spatially covered 
+      by the object SpatialObject. DE-9IM: TFFTTFTTT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8tpp <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8tpp <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8tpp "tangential proper part"@en)
+AnnotationAssertion(skos:definition geo:rcc8tpp "
+      Exists if the subject SpatialObject is spatially covered 
+      by the object SpatialObject. DE-9IM: TFFTTFTTT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8tpp "tangential proper part"@en)
+ObjectPropertyDomain(geo:rcc8tpp geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8tpp geo:SpatialObject)
+
+# Object Property: geo:rcc8tppi (tangential proper part inverse)
+
+AnnotationAssertion(dc:contributor geo:rcc8tppi "Matthew Perry")
+AnnotationAssertion(dc:creator geo:rcc8tppi "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:rcc8tppi "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:rcc8tppi "
+      Exists if the subject SpatialObject spatially covers the 
+      object SpatialObject. DE-9IM: TTTFTTFFT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:rcc8tppi "
+      Exists if the subject SpatialObject spatially covers the 
+      object SpatialObject. DE-9IM: TTTFTTFFT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8tppi <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:rcc8tppi <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:rcc8tppi "tangential proper part inverse"@en)
+AnnotationAssertion(skos:definition geo:rcc8tppi "
+      Exists if the subject SpatialObject spatially covers the 
+      object SpatialObject. DE-9IM: TTTFTTFFT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:rcc8tppi "tangential proper part inverse"@en)
+ObjectPropertyDomain(geo:rcc8tppi geo:SpatialObject)
+ObjectPropertyRange(geo:rcc8tppi geo:SpatialObject)
+
+# Object Property: geo:sfContains (contains)
+
+AnnotationAssertion(dc:contributor geo:sfContains "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfContains "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfContains "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfContains "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*****FF*
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfContains "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*****FF*
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfContains <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfContains <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfContains "contains"@en)
+AnnotationAssertion(skos:definition geo:sfContains "
+      Exists if the subject SpatialObject spatially contains the 
+      object SpatialObject. DE-9IM: T*****FF*
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfContains "contains"@en)
+ObjectPropertyDomain(geo:sfContains geo:SpatialObject)
+ObjectPropertyRange(geo:sfContains geo:SpatialObject)
+
+# Object Property: geo:sfCrosses (crosses)
+
+AnnotationAssertion(dc:contributor geo:sfCrosses "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfCrosses "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfCrosses "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfCrosses "
+      Exists if the subject SpatialObject spatially crosses the 
+      object SpatialObject. DE-9IM: T*T******
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfCrosses "
+      Exists if the subject SpatialObject spatially crosses the 
+      object SpatialObject. DE-9IM: T*T******
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfCrosses <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfCrosses <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfCrosses "crosses"@en)
+AnnotationAssertion(skos:definition geo:sfCrosses "
+      Exists if the subject SpatialObject spatially crosses the 
+      object SpatialObject. DE-9IM: T*T******
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfCrosses "crosses"@en)
+ObjectPropertyDomain(geo:sfCrosses geo:SpatialObject)
+ObjectPropertyRange(geo:sfCrosses geo:SpatialObject)
+
+# Object Property: geo:sfDisjoint (disjoint)
+
+AnnotationAssertion(dc:contributor geo:sfDisjoint "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfDisjoint "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfDisjoint "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfDisjoint "
+      Exists if the subject SpatialObject is spatially disjoint 
+      from the object SpatialObject. DE-9IM: FF*FF****
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfDisjoint "
+      Exists if the subject SpatialObject is spatially disjoint 
+      from the object SpatialObject. DE-9IM: FF*FF****
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfDisjoint <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfDisjoint <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfDisjoint "disjoint"@en)
+AnnotationAssertion(skos:definition geo:sfDisjoint "
+      Exists if the subject SpatialObject is spatially disjoint 
+      from the object SpatialObject. DE-9IM: FF*FF****
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfDisjoint "disjoint"@en)
+ObjectPropertyDomain(geo:sfDisjoint geo:SpatialObject)
+ObjectPropertyRange(geo:sfDisjoint geo:SpatialObject)
+
+# Object Property: geo:sfEquals (equals)
+
+AnnotationAssertion(dc:contributor geo:sfEquals "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfEquals "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfEquals "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfEquals "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfEquals "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfEquals <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfEquals <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfEquals "equals"@en)
+AnnotationAssertion(skos:definition geo:sfEquals "
+      Exists if the subject SpatialObject spatially equals the 
+      object SpatialObject. DE-9IM: TFFFTFFFT
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfEquals "equals"@en)
+ObjectPropertyDomain(geo:sfEquals geo:SpatialObject)
+ObjectPropertyRange(geo:sfEquals geo:SpatialObject)
+
+# Object Property: geo:sfIntersects (intersects)
+
+AnnotationAssertion(dc:contributor geo:sfIntersects "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfIntersects "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfIntersects "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfIntersects "
+      Exists if the subject SpatialObject is not spatially disjoint 
+      from the object SpatialObject.
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** 
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfIntersects "
+      Exists if the subject SpatialObject is not spatially disjoint 
+      from the object SpatialObject.
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** 
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfIntersects <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfIntersects <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfIntersects "intersects"@en)
+AnnotationAssertion(skos:definition geo:sfIntersects "
+      Exists if the subject SpatialObject is not spatially disjoint 
+      from the object SpatialObject.
+      DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T**** 
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfIntersects "intersects"@en)
+ObjectPropertyDomain(geo:sfIntersects geo:SpatialObject)
+ObjectPropertyRange(geo:sfIntersects geo:SpatialObject)
+
+# Object Property: geo:sfOverlaps (overlaps)
+
+AnnotationAssertion(dc:contributor geo:sfOverlaps "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfOverlaps "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfOverlaps "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfOverlaps "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: T*T***T** 
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfOverlaps "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: T*T***T** 
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfOverlaps <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfOverlaps <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfOverlaps "overlaps"@en)
+AnnotationAssertion(skos:definition geo:sfOverlaps "
+      Exists if the subject SpatialObject spatially overlaps the 
+      object SpatialObject. DE-9IM: T*T***T** 
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfOverlaps "overlaps"@en)
+ObjectPropertyDomain(geo:sfOverlaps geo:SpatialObject)
+ObjectPropertyRange(geo:sfOverlaps geo:SpatialObject)
+
+# Object Property: geo:sfTouches (touches)
+
+AnnotationAssertion(dc:contributor geo:sfTouches "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfTouches "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfTouches "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfTouches "
+      Exists if the subject SpatialObject spatially touches the 
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfTouches "
+      Exists if the subject SpatialObject spatially touches the 
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfTouches <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfTouches <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfTouches "touches"@en)
+AnnotationAssertion(skos:definition geo:sfTouches "
+      Exists if the subject SpatialObject spatially touches the 
+      object SpatialObject.
+      DE-9IM: FT******* ^ F**T***** ^ F***T****
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfTouches "touches"@en)
+ObjectPropertyDomain(geo:sfTouches geo:SpatialObject)
+ObjectPropertyRange(geo:sfTouches geo:SpatialObject)
+
+# Object Property: geo:sfWithin (within)
+
+AnnotationAssertion(dc:contributor geo:sfWithin "Matthew Perry")
+AnnotationAssertion(dc:creator geo:sfWithin "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:sfWithin "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:sfWithin "
+      Exists if the subject SpatialObject is spatially within the 
+      object SpatialObject. DE-9IM: T*F**F***
+    "@en)
+AnnotationAssertion(rdfs:comment geo:sfWithin "
+      Exists if the subject SpatialObject is spatially within the 
+      object SpatialObject. DE-9IM: T*F**F***
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfWithin <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:sfWithin <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:sfWithin "within"@en)
+AnnotationAssertion(skos:definition geo:sfWithin "
+      Exists if the subject SpatialObject is spatially within the 
+      object SpatialObject. DE-9IM: T*F**F***
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:sfWithin "within"@en)
+ObjectPropertyDomain(geo:sfWithin geo:SpatialObject)
+ObjectPropertyRange(geo:sfWithin geo:SpatialObject)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: geo:asGML (asGML)
+
+AnnotationAssertion(dc:contributor geo:asGML "Matthew Perry")
+AnnotationAssertion(dc:creator geo:asGML "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:asGML "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:asGML "
+      The GML serialization of a geometry
+    "@en)
+AnnotationAssertion(rdfs:comment geo:asGML "
+      The GML serialization of a geometry
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:asGML <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:asGML <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:asGML "asGML"@en)
+AnnotationAssertion(skos:definition geo:asGML "
+      The GML serialization of a geometry
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:asGML "asGML"@en)
+SubDataPropertyOf(geo:asGML geo:hasSerialization)
+DataPropertyDomain(geo:asGML geo:Geometry)
+DataPropertyRange(geo:asGML geo:gmlLiteral)
+
+# Data Property: geo:asWKT (asWKT)
+
+AnnotationAssertion(dc:contributor geo:asWKT "Matthew Perry")
+AnnotationAssertion(dc:creator geo:asWKT "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:asWKT "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:asWKT "
+      The WKT serialization of a geometry
+    "@en)
+AnnotationAssertion(rdfs:comment geo:asWKT "
+      The WKT serialization of a geometry
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:asWKT <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:asWKT <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:asWKT "asWKT"@en)
+AnnotationAssertion(skos:definition geo:asWKT "
+      The WKT serialization of a geometry
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:asWKT "asWKT"@en)
+SubDataPropertyOf(geo:asWKT geo:hasSerialization)
+DataPropertyDomain(geo:asWKT geo:Geometry)
+DataPropertyRange(geo:asWKT geo:wktLiteral)
+
+# Data Property: geo:coordinateDimension (coordinateDimension)
+
+AnnotationAssertion(dc:contributor geo:coordinateDimension "Matthew Perry")
+AnnotationAssertion(dc:creator geo:coordinateDimension "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:coordinateDimension "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:coordinateDimension "
+      The number of measurements or axes needed to describe the position of this
+      geometry in a coordinate system.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:coordinateDimension "
+      The number of measurements or axes needed to describe the position of this
+      geometry in a coordinate system.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:coordinateDimension <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:coordinateDimension <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:coordinateDimension "coordinateDimension"@en)
+AnnotationAssertion(skos:definition geo:coordinateDimension "
+      The number of measurements or axes needed to describe the position of this
+      geometry in a coordinate system.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:coordinateDimension "coordinateDimension"@en)
+DataPropertyDomain(geo:coordinateDimension geo:Geometry)
+DataPropertyRange(geo:coordinateDimension xsd:integer)
+
+# Data Property: geo:dimension (dimension)
+
+AnnotationAssertion(dc:contributor geo:dimension "Matthew Perry")
+AnnotationAssertion(dc:creator geo:dimension "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:dimension "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:dimension "
+      The topological dimension of this geometric object, which 
+      must be less than or equal to the coordinate dimension. 
+      In non-homogeneous collections, this will return the largest 
+      topological dimension of the contained objects.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:dimension "
+      The topological dimension of this geometric object, which 
+      must be less than or equal to the coordinate dimension. 
+      In non-homogeneous collections, this will return the largest 
+      topological dimension of the contained objects.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:dimension <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:dimension <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:dimension "dimension"@en)
+AnnotationAssertion(skos:definition geo:dimension "
+      The topological dimension of this geometric object, which 
+      must be less than or equal to the coordinate dimension. 
+      In non-homogeneous collections, this will return the largest 
+      topological dimension of the contained objects.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:dimension "dimension"@en)
+DataPropertyDomain(geo:dimension geo:Geometry)
+DataPropertyRange(geo:dimension xsd:integer)
+
+# Data Property: geo:haOsmId (geo:haOsmId)
+
+DataPropertyDomain(geo:haOsmId geo:Feature)
+DataPropertyRange(geo:haOsmId xsd:string)
+
+# Data Property: geo:hasCode (geo:hasCode)
+
+DataPropertyDomain(geo:hasCode geo:Feature)
+DataPropertyRange(geo:hasCode xsd:integer)
+
+# Data Property: geo:hasFClass (geo:hasFClass)
+
+DataPropertyDomain(geo:hasFClass geo:Feature)
+DataPropertyRange(geo:hasFClass xsd:string)
+
+# Data Property: geo:hasId (geo:hasId)
+
+DataPropertyDomain(geo:hasId geo:Feature)
+DataPropertyRange(geo:hasId xsd:string)
+
+# Data Property: geo:hasName (geo:hasName)
+
+DataPropertyDomain(geo:hasName geo:Feature)
+DataPropertyRange(geo:hasName xsd:string)
+
+# Data Property: geo:hasPopulation (geo:hasPopulation)
+
+DataPropertyDomain(geo:hasPopulation geo:Places)
+DataPropertyRange(geo:hasPopulation xsd:integer)
+
+# Data Property: geo:hasSerialization (has serialization)
+
+AnnotationAssertion(dc:contributor geo:hasSerialization "Matthew Perry")
+AnnotationAssertion(dc:creator geo:hasSerialization "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:hasSerialization "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:hasSerialization "
+      Connects a geometry object with its text-based serialization.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:hasSerialization "
+      Connects a geometry object with its text-based serialization.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:hasSerialization <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:hasSerialization <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:hasSerialization "has serialization"@en)
+AnnotationAssertion(skos:definition geo:hasSerialization "
+      Connects a geometry object with its text-based serialization.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:hasSerialization "has serialization"@en)
+DataPropertyDomain(geo:hasSerialization geo:Geometry)
+DataPropertyRange(geo:hasSerialization rdfs:Literal)
+
+# Data Property: geo:hasWidth (geo:hasWidth)
+
+DataPropertyDomain(geo:hasWidth geo:Waterways)
+DataPropertyRange(geo:hasWidth xsd:unsignedShort)
+
+# Data Property: geo:isEmpty (isEmpty)
+
+AnnotationAssertion(dc:contributor geo:isEmpty "Matthew Perry")
+AnnotationAssertion(dc:creator geo:isEmpty "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:isEmpty "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:isEmpty "
+      (true) if this geometric object is the empty Geometry. If 
+      true, then this geometric object represents the empty point 
+      set for the coordinate space.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:isEmpty "
+      (true) if this geometric object is the empty Geometry. If 
+      true, then this geometric object represents the empty point 
+      set for the coordinate space.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:isEmpty <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:isEmpty <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:isEmpty "isEmpty"@en)
+AnnotationAssertion(skos:definition geo:isEmpty "
+      (true) if this geometric object is the empty Geometry. If 
+      true, then this geometric object represents the empty point 
+      set for the coordinate space.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:isEmpty "isEmpty"@en)
+DataPropertyDomain(geo:isEmpty geo:Geometry)
+DataPropertyRange(geo:isEmpty xsd:boolean)
+
+# Data Property: geo:isSimple (isSimple)
+
+AnnotationAssertion(dc:contributor geo:isSimple "Matthew Perry")
+AnnotationAssertion(dc:creator geo:isSimple "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:isSimple "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:isSimple "
+      (true) if this geometric object has no anomalous geometric 
+      points, such as self intersection or self tangency.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:isSimple "
+      (true) if this geometric object has no anomalous geometric 
+      points, such as self intersection or self tangency.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:isSimple <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:isSimple <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:isSimple "isSimple"@en)
+AnnotationAssertion(skos:definition geo:isSimple "
+      (true) if this geometric object has no anomalous geometric 
+      points, such as self intersection or self tangency.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:isSimple "isSimple"@en)
+DataPropertyDomain(geo:isSimple geo:Geometry)
+DataPropertyRange(geo:isSimple xsd:boolean)
+
+# Data Property: geo:spatialDimension (spatialDimension)
+
+AnnotationAssertion(dc:contributor geo:spatialDimension "Matthew Perry")
+AnnotationAssertion(dc:creator geo:spatialDimension "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:spatialDimension "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:spatialDimension "
+      The number of measurements or axes needed to describe the spatial position of 
+      this geometry in a coordinate system.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:spatialDimension "
+      The number of measurements or axes needed to describe the spatial position of 
+      this geometry in a coordinate system.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:spatialDimension <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:spatialDimension <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:spatialDimension "spatialDimension"@en)
+AnnotationAssertion(skos:definition geo:spatialDimension "
+      The number of measurements or axes needed to describe the spatial position of 
+      this geometry in a coordinate system.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:spatialDimension "spatialDimension"@en)
+DataPropertyDomain(geo:spatialDimension geo:Geometry)
+DataPropertyRange(geo:spatialDimension xsd:integer)
+
+
+############################
+#   Datatypes
+############################
+
+# Datatype: geo:gmlLiteral (GML Literal)
+
+AnnotationAssertion(dc:contributor geo:gmlLiteral "Matthew Perry")
+AnnotationAssertion(dc:creator geo:gmlLiteral "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:gmlLiteral "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:gmlLiteral "
+      A GML serialization of a geometry object.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:gmlLiteral "
+      A GML serialization of a geometry object.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:gmlLiteral <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:gmlLiteral <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:gmlLiteral "GML Literal"@en)
+AnnotationAssertion(skos:definition geo:gmlLiteral "
+      A GML serialization of a geometry object.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:gmlLiteral "GML Literal"@en)
+
+# Datatype: geo:wktLiteral (Well-known Text Literal)
+
+AnnotationAssertion(dc:contributor geo:wktLiteral "Matthew Perry")
+AnnotationAssertion(dc:creator geo:wktLiteral "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:wktLiteral "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:wktLiteral "
+      A Well-known Text serialization of a geometry object.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:wktLiteral "
+      A Well-known Text serialization of a geometry object.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:wktLiteral <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:wktLiteral <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:wktLiteral "Well-known Text Literal"@en)
+AnnotationAssertion(skos:definition geo:wktLiteral "
+      A Well-known Text serialization of a geometry object.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:wktLiteral "Well-known Text Literal"@en)
+
+
+############################
+#   Classes
+############################
+
+# Class: geo:Beach (geo:Beach)
+
+SubClassOf(geo:Beach geo:NaturalFeatures)
+
+# Class: geo:BodiesOfWater (geo:BodiesOfWater)
+
+SubClassOf(geo:BodiesOfWater geo:Feature)
+SubClassOf(geo:BodiesOfWater ObjectAllValuesFrom(geo:defaultGeometry <http://www.opengis.net/ont/sf#Polygon>))
+
+# Class: geo:Canal (geo:Canal)
+
+SubClassOf(geo:Canal geo:Waterways)
+
+# Class: geo:CaveEntrance (geo:CaveEntrance)
+
+SubClassOf(geo:CaveEntrance geo:NaturalFeatures)
+
+# Class: geo:Cemetery (geo:Cemetery)
+
+SubClassOf(geo:Cemetery geo:LandUseAndCover)
+
+# Class: geo:City (geo:City)
+
+SubClassOf(geo:City geo:Places)
+
+# Class: geo:Cliff (geo:Cliff)
+
+SubClassOf(geo:Cliff geo:NaturalFeatures)
+
+# Class: geo:Country (geo:Country)
+
+SubClassOf(geo:Country geo:Places)
+
+# Class: geo:Dock (geo:Dock)
+
+SubClassOf(geo:Dock geo:BodiesOfWater)
+
+# Class: geo:Drain (geo:Drain)
+
+SubClassOf(geo:Drain geo:Waterways)
+
+# Class: geo:Dwelling (geo:Dwelling)
+
+SubClassOf(geo:Dwelling geo:Places)
+
+# Class: geo:Farm (geo:Farm)
+
+SubClassOf(geo:Farm geo:Places)
+
+# Class: geo:Farmland (geo:Farmland)
+
+SubClassOf(geo:Farmland geo:LandUseAndCover)
+
+# Class: geo:Farmyard (geo:Farmyard)
+
+SubClassOf(geo:Farmyard geo:LandUseAndCover)
+
+# Class: geo:Feature (Feature)
+
+AnnotationAssertion(dc:contributor geo:Feature "Matthew Perry")
+AnnotationAssertion(dc:creator geo:Feature "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:Feature "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:Feature "
+      This class represents the top-level feature type. This class is 
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      superclass of all feature types.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:Feature "
+      This class represents the top-level feature type. This class is 
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      superclass of all feature types.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:Feature <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:Feature <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:Feature "Feature"@en)
+AnnotationAssertion(skos:definition geo:Feature "
+      This class represents the top-level feature type. This class is 
+      equivalent to GFI_Feature defined in ISO 19156:2011, and it is 
+      superclass of all feature types.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:Feature "Feature"@en)
+SubClassOf(geo:Feature geo:SpatialObject)
+DisjointClasses(geo:Feature geo:Geometry)
+
+# Class: geo:Forest (geo:Forest)
+
+SubClassOf(geo:Forest geo:LandUseAndCover)
+
+# Class: geo:Geometry (Geometry)
+
+AnnotationAssertion(dc:contributor geo:Geometry "Matthew Perry")
+AnnotationAssertion(dc:creator geo:Geometry "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:Geometry "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:Geometry "
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:Geometry "
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:Geometry <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:Geometry <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:Geometry "Geometry"@en)
+AnnotationAssertion(skos:definition geo:Geometry "
+      The class represents the top-level geometry type. This class is 
+      equivalent to the UML class GM_Object defined in ISO 19107, and 
+      it is superclass of all geometry types.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:Geometry "Geometry"@en)
+SubClassOf(geo:Geometry geo:SpatialObject)
+
+# Class: geo:Glacier (geo:Glacier)
+
+SubClassOf(geo:Glacier geo:BodiesOfWater)
+SubClassOf(geo:Glacier geo:NaturalFeatures)
+
+# Class: geo:Grass (geo:Grass)
+
+SubClassOf(geo:Grass geo:LandUseAndCover)
+
+# Class: geo:Hamlet (geo:Hamlet)
+
+SubClassOf(geo:Hamlet geo:Places)
+
+# Class: geo:Heath (geo:Heath)
+
+SubClassOf(geo:Heath geo:LandUseAndCover)
+
+# Class: geo:Industrial (geo:Industrial)
+
+SubClassOf(geo:Industrial geo:LandUseAndCover)
+
+# Class: geo:Island (geo:Island)
+
+SubClassOf(geo:Island geo:Places)
+
+# Class: geo:LandUseAndCover (geo:LandUseAndCover)
+
+SubClassOf(geo:LandUseAndCover geo:Feature)
+SubClassOf(geo:LandUseAndCover ObjectAllValuesFrom(geo:defaultGeometry <http://www.opengis.net/ont/sf#Polygon>))
+
+# Class: geo:Locality (geo:Locality)
+
+SubClassOf(geo:Locality geo:Places)
+SubClassOf(geo:Locality ObjectAllValuesFrom(geo:defaultGeometry <http://www.opengis.net/ont/gml#Point>))
+
+# Class: geo:Military (geo:Military)
+
+SubClassOf(geo:Military geo:LandUseAndCover)
+
+# Class: geo:Mine (geo:Mine)
+
+SubClassOf(geo:Mine geo:NaturalFeatures)
+
+# Class: geo:NationalCapital (geo:NationalCapital)
+
+SubClassOf(geo:NationalCapital geo:Places)
+
+# Class: geo:NationalPark (geo:NationalPark)
+
+SubClassOf(geo:NationalPark geo:LandUseAndCover)
+
+# Class: geo:NaturalFeatures (geo:NaturalFeatures)
+
+SubClassOf(geo:NaturalFeatures geo:Feature)
+SubClassOf(geo:NaturalFeatures ObjectAllValuesFrom(geo:defaultGeometry <http://www.opengis.net/ont/gml#Point>))
+
+# Class: geo:NatureReserve (geo:NatureReserve)
+
+SubClassOf(geo:NatureReserve geo:LandUseAndCover)
+
+# Class: geo:Orchard (geo:Orchard)
+
+SubClassOf(geo:Orchard geo:LandUseAndCover)
+
+# Class: geo:Park (geo:Park)
+
+SubClassOf(geo:Park geo:LandUseAndCover)
+
+# Class: geo:Peak (geo:Peak)
+
+SubClassOf(geo:Peak geo:NaturalFeatures)
+
+# Class: geo:Places (geo:Places)
+
+SubClassOf(geo:Places geo:Feature)
+SubClassOf(geo:Places ObjectAllValuesFrom(geo:defaultGeometry <http://www.opengis.net/ont/gml#Point>))
+
+# Class: geo:Quarry (geo:Quarry)
+
+SubClassOf(geo:Quarry geo:LandUseAndCover)
+
+# Class: geo:RecreationGround (geo:RecreationGround)
+
+SubClassOf(geo:RecreationGround geo:LandUseAndCover)
+
+# Class: geo:Region (geo:Region)
+
+SubClassOf(geo:Region geo:Places)
+
+# Class: geo:Reservoir (geo:Reservoir)
+
+SubClassOf(geo:Reservoir geo:BodiesOfWater)
+
+# Class: geo:Residential (geo:Residential)
+
+SubClassOf(geo:Residential geo:LandUseAndCover)
+
+# Class: geo:Retail (geo:Retail)
+
+SubClassOf(geo:Retail geo:LandUseAndCover)
+
+# Class: geo:River (geo:River)
+
+SubClassOf(geo:River geo:BodiesOfWater)
+SubClassOf(geo:River geo:Waterways)
+
+# Class: geo:Scrub (geo:Scrub)
+
+SubClassOf(geo:Scrub geo:LandUseAndCover)
+
+# Class: geo:SpatialObject (SpatialObject)
+
+AnnotationAssertion(dc:contributor geo:SpatialObject "Matthew Perry")
+AnnotationAssertion(dc:creator geo:SpatialObject "OGC GeoSPARQL 1.0 Standard Working Group")
+AnnotationAssertion(dc:date geo:SpatialObject "2011-06-16"^^xsd:date)
+AnnotationAssertion(dc:description geo:SpatialObject "
+      The class spatial-object represents everything that can have 
+      a spatial representation. It is superclass of feature and geometry.
+    "@en)
+AnnotationAssertion(rdfs:comment geo:SpatialObject "
+      The class spatial-object represents everything that can have 
+      a spatial representation. It is superclass of feature and geometry.
+    "@en)
+AnnotationAssertion(rdfs:isDefinedBy geo:SpatialObject <http://www.opengis.net/ont/geosparql>)
+AnnotationAssertion(rdfs:isDefinedBy geo:SpatialObject <http://www.opengis.net/spec/geosparql/1.0>)
+AnnotationAssertion(rdfs:label geo:SpatialObject "SpatialObject"@en)
+AnnotationAssertion(skos:definition geo:SpatialObject "
+      The class spatial-object represents everything that can have 
+      a spatial representation. It is superclass of feature and geometry.
+    "@en)
+AnnotationAssertion(skos:prefLabel geo:SpatialObject "SpatialObject"@en)
+
+# Class: geo:Spring (geo:Spring)
+
+SubClassOf(geo:Spring geo:NaturalFeatures)
+
+# Class: geo:Stream (geo:Stream)
+
+SubClassOf(geo:Stream geo:Waterways)
+
+# Class: geo:Suburb (geo:Suburb)
+
+SubClassOf(geo:Suburb geo:Places)
+
+# Class: geo:Town (geo:Town)
+
+SubClassOf(geo:Town geo:Places)
+
+# Class: geo:Tree (geo:Tree)
+
+SubClassOf(geo:Tree geo:NaturalFeatures)
+
+# Class: geo:Village (geo:Village)
+
+SubClassOf(geo:Village geo:Places)
+
+# Class: geo:Vineyard (geo:Vineyard)
+
+SubClassOf(geo:Vineyard geo:LandUseAndCover)
+
+# Class: geo:Volcano (geo:Volcano)
+
+SubClassOf(geo:Volcano geo:NaturalFeatures)
+
+# Class: geo:Water (geo:Water)
+
+SubClassOf(geo:Water geo:BodiesOfWater)
+
+# Class: geo:Waterways (geo:Waterways)
+
+SubClassOf(geo:Waterways geo:Feature)
+SubClassOf(geo:Waterways ObjectAllValuesFrom(geo:defaultGeometry <http://www.opengis.net/ont/gml#LineString>))
+
+# Class: geo:Wetland (geo:Wetland)
+
+SubClassOf(geo:Wetland geo:BodiesOfWater)
+
+
+)
