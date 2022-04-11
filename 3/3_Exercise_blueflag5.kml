@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Folder>
+		<Placemark>
+			<name>Result0</name>
+
+<Point>
+    <coordinates>20.78611110484206,37.84444447217173</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΛΙΚΑΝΑΣ</TD></TR>
+					<TR><TD>municipalityName</TD><TD>ΔΗΜΟΣ ΖΑΚΥΝΘΟΥ</TD></TR>
+					<TR><TD>latitude</TD><TD>37.84444427</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΛΙΚΑΝΑΣ</value>
+				</Data>
+				<Data name='municipalityName'>
+					<value>ΔΗΜΟΣ ΖΑΚΥΝΘΟΥ</value>
+				</Data>
+				<Data name='latitude'>
+					<value>37.84444427</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result1</name>
+
+<Point>
+    <coordinates>20.78611110484206,37.84444447217173</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΛΙΚΑΝΑΣ</TD></TR>
+					<TR><TD>municipalityName</TD><TD>ΔΗΜΟΣ ΖΑΚΥΝΘΟΥ</TD></TR>
+					<TR><TD>latitude</TD><TD>37.84444427</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΛΙΚΑΝΑΣ</value>
+				</Data>
+				<Data name='municipalityName'>
+					<value>ΔΗΜΟΣ ΖΑΚΥΝΘΟΥ</value>
+				</Data>
+				<Data name='latitude'>
+					<value>37.84444427</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result2</name>
+
+<Point>
+    <coordinates>20.75749999344998,38.06861113861287</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΑΤΕΛΕΙΟΣ</TD></TR>
+					<TR><TD>municipalityName</TD><TD>ΔΗΜΟΣ ΚΕΦΑΛΟΝΙΑΣ</TD></TR>
+					<TR><TD>latitude</TD><TD>38.06861115</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΑΤΕΛΕΙΟΣ</value>
+				</Data>
+				<Data name='municipalityName'>
+					<value>ΔΗΜΟΣ ΚΕΦΑΛΟΝΙΑΣ</value>
+				</Data>
+				<Data name='latitude'>
+					<value>38.06861115</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result3</name>
+
+<Point>
+    <coordinates>20.479999993449063,38.165000027556495</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΠΛΑΤΥΣ ΓΥΑΛΟΣ</TD></TR>
+					<TR><TD>municipalityName</TD><TD>ΔΗΜΟΣ ΚΕΦΑΛΟΝΙΑΣ</TD></TR>
+					<TR><TD>latitude</TD><TD>38.16500092</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΠΛΑΤΥΣ ΓΥΑΛΟΣ</value>
+				</Data>
+				<Data name='municipalityName'>
+					<value>ΔΗΜΟΣ ΚΕΦΑΛΟΝΙΑΣ</value>
+				</Data>
+				<Data name='latitude'>
+					<value>38.16500092</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result4</name>
+
+<Point>
+    <coordinates>20.479999993449063,38.165000027556495</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΠΛΑΤΥΣ ΓΥΑΛΟΣ</TD></TR>
+					<TR><TD>municipalityName</TD><TD>ΔΗΜΟΣ ΚΕΦΑΛΟΝΙΑΣ</TD></TR>
+					<TR><TD>latitude</TD><TD>38.16500092</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΠΛΑΤΥΣ ΓΥΑΛΟΣ</value>
+				</Data>
+				<Data name='municipalityName'>
+					<value>ΔΗΜΟΣ ΚΕΦΑΛΟΝΙΑΣ</value>
+				</Data>
+				<Data name='latitude'>
+					<value>38.16500092</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+	</Folder>
+</kml>

@@ -1,0 +1,665 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Folder>
+		<Placemark>
+			<name>Result0</name>
+
+<Point>
+    <coordinates>23.635833328900436,35.23388891682238</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΓΡΑΜΜΕΝΟ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.63583374</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΓΡΑΜΜΕΝΟ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.63583374</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result1</name>
+
+<Point>
+    <coordinates>23.782499995088344,35.54416669424001</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΟΛΥΜΠΑΡΙ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.78249931</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΟΛΥΜΠΑΡΙ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.78249931</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result2</name>
+
+<Point>
+    <coordinates>23.936666661741636,35.506666694141614</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΓ.ΑΠΟΣΤΟΛΟΙ-ΕΟΤ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.93666649</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΓ.ΑΠΟΣΤΟΛΟΙ-ΕΟΤ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.93666649</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result3</name>
+
+<Point>
+    <coordinates>23.936666661741636,35.506666694141614</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΓ.ΑΠΟΣΤΟΛΟΙ-ΕΟΤ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.93666649</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΓ.ΑΠΟΣΤΟΛΟΙ-ΕΟΤ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.93666649</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result4</name>
+
+<Point>
+    <coordinates>23.936666661741636,35.506666694141614</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΧΡΥΣΗ ΑΚΤΗ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.93666649</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΧΡΥΣΗ ΑΚΤΗ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.93666649</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result5</name>
+
+<Point>
+    <coordinates>23.63416666230109,35.234166694603545</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΒΟΥΛΙΣΜΕΝΗ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.63416672</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΒΟΥΛΙΣΜΕΝΗ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.63416672</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result6</name>
+
+<Point>
+    <coordinates>23.93888888392658,35.516666694131956</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΣΤΑΛΟΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.93888855</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΣΤΑΛΟΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.93888855</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result7</name>
+
+<Point>
+    <coordinates>23.77499999508969,35.54666669424424</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΜΑΛΕΜΕ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.77499962</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΜΑΛΕΜΕ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.77499962</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result8</name>
+
+<Point>
+    <coordinates>24.74888888411731,34.9963889160627</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΜΑΤΑΛΑ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.74888802</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΜΑΤΑΛΑ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.74888802</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result9</name>
+
+<Point>
+    <coordinates>24.088333328177978,35.555555582867655</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΑΛΑΘΑΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.08833313</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΑΛΑΘΑΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.08833313</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result10</name>
+
+<Point>
+    <coordinates>23.67944443997071,35.2358333612245</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΛΙΜΝΑΚΙ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.67944527</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΛΙΜΝΑΚΙ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.67944527</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result11</name>
+
+<Point>
+    <coordinates>24.474999994885337,35.368333360459395</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΡΕΘΥΜΝΟ 1</TD></TR>
+					<TR><TD>longitude</TD><TD>24.47500038</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΡΕΘΥΜΝΟ 1</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.47500038</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result12</name>
+
+<Point>
+    <coordinates>24.474999994885337,35.368333360459395</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΡΕΘΥΜΝΟ 2</TD></TR>
+					<TR><TD>longitude</TD><TD>24.47500038</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΡΕΘΥΜΝΟ 2</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.47500038</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result13</name>
+
+<Point>
+    <coordinates>24.474999994885337,35.368333360459395</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΡΕΘΥΜΝΟ 3</TD></TR>
+					<TR><TD>longitude</TD><TD>24.47500038</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΡΕΘΥΜΝΟ 3</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.47500038</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result14</name>
+
+<Point>
+    <coordinates>24.51972221706169,35.364444471534924</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΡΕΘΥΜΝΟ 6/ΠΛΑΤΑΝΙΑΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.51972198</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΡΕΘΥΜΝΟ 6/ΠΛΑΤΑΝΙΑΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.51972198</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result15</name>
+
+<Point>
+    <coordinates>24.57666666150332,35.38000002703557</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΠΗΓΙΑΝΟΣ ΚΑΜΠΟΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.57666588</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΠΗΓΙΑΝΟΣ ΚΑΜΠΟΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.57666588</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result16</name>
+
+<Point>
+    <coordinates>24.69999999510157,35.104166693806164</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΓ.ΓΑΛΗΝΗ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.70000076</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΓ.ΓΑΛΗΝΗ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.70000076</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result17</name>
+
+<Point>
+    <coordinates>24.0183333282896,35.506666694073814</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΧΑΝΙΑ,ΝΕΑ ΧΩΡΑ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.01833344</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΧΑΝΙΑ,ΝΕΑ ΧΩΡΑ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.01833344</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result18</name>
+
+<Point>
+    <coordinates>24.272777772829773,35.358055582866136</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΠΕΡΑΣΤΙΚΟΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.27277756</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΠΕΡΑΣΤΙΚΟΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.27277756</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result19</name>
+
+<Point>
+    <coordinates>23.91999999505451,35.505000027486744</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΑΛΑΜΑΚΙ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.92000008</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΑΛΑΜΑΚΙ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.92000008</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result20</name>
+
+<Point>
+    <coordinates>24.413611106288595,35.17555558288493</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΔΑΜΝΟΝΙ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.41361046</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΔΑΜΝΟΝΙ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.41361046</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result21</name>
+
+<Point>
+    <coordinates>24.39666666190021,35.175000027339564</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΠΛΑΚΙΑΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.39666748</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΠΛΑΚΙΑΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.39666748</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result22</name>
+
+<Point>
+    <coordinates>23.912777772840165,35.51888891637187</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΛΙΜΑΝΑΚΙ ΠΛΑΤΑΝΙΑ</TD></TR>
+					<TR><TD>longitude</TD><TD>23.91277695</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΛΙΜΑΝΑΚΙ ΠΛΑΤΑΝΙΑ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>23.91277695</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result23</name>
+
+<Point>
+    <coordinates>24.169999994967732,35.45166669399031</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΑΛΥΒΕΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.17000008</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΑΛΥΒΕΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.17000008</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result24</name>
+
+<Point>
+    <coordinates>24.169999994967732,35.45166669399031</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΑΛΥΒΕΣ,ΑΚΤΗ ΞΥΔΑ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.17000008</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΑΛΥΒΕΣ,ΑΚΤΗ ΞΥΔΑ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.17000008</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result25</name>
+
+<Point>
+    <coordinates>24.51666666155566,35.37027780487309</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΡΕΘΥΜΝΟ 4</TD></TR>
+					<TR><TD>longitude</TD><TD>24.51666641</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΡΕΘΥΜΝΟ 4</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.51666641</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result26</name>
+
+<Point>
+    <coordinates>24.614444439161524,35.392500026994576</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΣΚΑΛΕΤΑ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.61444473</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΣΚΑΛΕΤΑ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.61444473</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result27</name>
+
+<Point>
+    <coordinates>24.290555550622916,35.35472224951382</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΚΑΒΡΟΣ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.29055595</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΚΑΒΡΟΣ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.29055595</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result28</name>
+
+<Point>
+    <coordinates>24.686666661382603,35.41555558247681</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΠΑΝΟΡΜΟ-ΛΙΜΝΗ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.68666649</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΠΑΝΟΡΜΟ-ΛΙΜΝΗ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.68666649</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result29</name>
+
+<Point>
+    <coordinates>24.783333327922282,35.413333360167655</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΜΠΑΛΙ-ΛΙΒΑΔΙ</TD></TR>
+					<TR><TD>longitude</TD><TD>24.78333282</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΜΠΑΛΙ-ΛΙΒΑΔΙ</value>
+				</Data>
+				<Data name='longitude'>
+					<value>24.78333282</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+	</Folder>
+</kml>

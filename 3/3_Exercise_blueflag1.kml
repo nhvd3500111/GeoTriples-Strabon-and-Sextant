@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Folder>
+		<Placemark>
+			<name>Result0</name>
+
+<Point>
+    <coordinates>23.77277776968639,37.83361113664151</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result1</name>
+
+<Point>
+    <coordinates>23.759999991859512,37.85833335884641</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result2</name>
+
+<Point>
+    <coordinates>23.30277776965087,38.081944470076785</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΞΥΛΟΚΑΣΤΡΟ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΞΥΛΟΚΑΣΤΡΟ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result3</name>
+
+<Point>
+    <coordinates>23.777499991909195,37.81555558110605</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΣΤΕΡΑΣ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΣΤΕΡΑΣ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result4</name>
+
+<Point>
+    <coordinates>23.75166665856285,37.86000002552114</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result5</name>
+
+<Point>
+    <coordinates>23.810277769676972,37.822222247734054</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΒΑΡΚΙΖΑ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΒΑΡΚΙΖΑ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result6</name>
+
+<Point>
+    <coordinates>23.814444436273693,37.822500025510564</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΒΑΡΚΙΖΑ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΒΑΡΚΙΖΑ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result7</name>
+
+<Point>
+    <coordinates>23.91277776973332,37.73416669219285</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΜΑΥΡΟ ΛΙΘΑΡΙ,EDEN</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΜΑΥΡΟ ΛΙΘΑΡΙ,EDEN</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result8</name>
+
+<Point>
+    <coordinates>23.749999991870418,37.855555581086904</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΠΟΛΛΩΝΙΕΣ ΒΟΥΛΑΣ Α</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result9</name>
+
+<Point>
+    <coordinates>23.807777769681092,37.82055558107765</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΒΑΡΚΙΖΑ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΒΑΡΚΙΖΑ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result10</name>
+
+<Point>
+    <coordinates>23.774166658620715,37.80916669222501</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΣΤΕΡΑΣ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΣΤΕΡΑΣ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result11</name>
+
+<Point>
+    <coordinates>23.778333325211833,37.81333335887761</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΣΤΕΡΑΣ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΣΤΕΡΑΣ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result12</name>
+
+<Point>
+    <coordinates>23.897777769667048,37.78722224770159</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΛΑΓΟΝΗΣΙ-GRAND BEACH</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΛΑΓΟΝΗΣΙ-GRAND BEACH</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result13</name>
+
+<Point>
+    <coordinates>23.89305554746511,37.79083335881163</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΛΑΓΟΝΗΣΙ-ΔΥΤΙΚΗ ΠΛΑΖ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΛΑΓΟΝΗΣΙ-ΔΥΤΙΚΗ ΠΛΑΖ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result14</name>
+
+<Point>
+    <coordinates>23.893611102963522,37.79166669215039</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΛΑΓΟΝΗΣΙ-ΑΝAΤΟΛ. ΠΛΑΖ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΛΑΓΟΝΗΣΙ-ΑΝAΤΟΛ. ΠΛΑΖ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result15</name>
+
+<Point>
+    <coordinates>23.90805554754739,37.72666669220395</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΜΑΥΡΟ ΛΙΘΑΡΙ,EDEN</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΜΑΥΡΟ ΛΙΘΑΡΙ,EDEN</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+		<Placemark>
+			<name>Result16</name>
+
+<Point>
+    <coordinates>23.93999999192733,37.725277803290595</coordinates>
+</Point>
+			<description>
+				<![CDATA[<TABLE border="1">
+				
+					<TR><TD>beachName</TD><TD>ΑΝΑΒΥΣΣΟΣ ΚΕΝΤΡΙΚΗ</TD></TR>
+				</TABLE>]]>
+			</description>
+			<ExtendedData>
+				<Data name='beachName'>
+					<value>ΑΝΑΒΥΣΣΟΣ ΚΕΝΤΡΙΚΗ</value>
+				</Data>
+			</ExtendedData>
+		</Placemark>
+	</Folder>
+</kml>
